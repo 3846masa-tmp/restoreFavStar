@@ -1,0 +1,22 @@
+.Icon--heart:before {
+  content: "\f147" !important;
+}
+
+.HeartAnimationContainer > div {
+  display: none;
+}
+
+.Icon--heartBadge:before {
+  color: #ffac33 !important;
+  content: "\f001" !important;
+}
+
+.ProfileTweet-action--favorite .ProfileTweet-actionButton:hover,
+.ProfileTweet-action--favorite .ProfileTweet-actionButton:focus,
+.ProfileTweet-action--favorite .ProfileTweet-actionCount:hover,
+.ProfileTweet-action--favorite .ProfileTweet-actionCount:focus,
+.favorited .ProfileTweet-action--favorite .Icon--favorite,
+.favorited .ProfileTweet-action--favorite .ProfileTweet-actionButtonUndo,
+.favorited .tweet-actions .Icon--favorite {
+  color: #ffac33 !important;
+}

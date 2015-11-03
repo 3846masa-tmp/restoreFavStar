@@ -1,0 +1,2 @@
+# restoreFavStar
+Twitterのお気に入りを取り戻す拡張機能

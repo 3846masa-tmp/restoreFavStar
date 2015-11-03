@@ -1,4 +1,5 @@
-.Icon--heart:before {
+.HeartAnimationContainer:before {
+  font-family: "rosettaicons" !important;
   content: "\f147" !important;
 }
 

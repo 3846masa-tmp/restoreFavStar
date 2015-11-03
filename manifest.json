@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "restoreFavStar",
+  "version": "0.0.1",
+
+  "description": "Twitterのお気に入りを取り戻す拡張機能",
+
+  "content_scripts": [
+    {
+      "matches": [ "https://twitter.com/*" ],
+      "js": [
+        "jquery-2.1.4.min.js",
+        "restore.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}

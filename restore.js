@@ -31,5 +31,5 @@ setTimeout(function restoreFavStar() {
 	  });
 	})(document.body);
 
-	setTimeout(restoreFavStar, 0);
+	setTimeout(restoreFavStar, 100);
 }, 0);

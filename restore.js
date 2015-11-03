@@ -1,12 +1,11 @@
-setTimeout(function restoreFavStar() {
-	var $tooltips = $('.tooltip-inner:contains(いいね)');
-	if ($tooltips.length >= 0) {
-		$tooltips.text('お気に入りに登録');
-		$tooltips.parent().css({'margin-left' : '-2.5em'});
+(function replacerTooltip() {
+	var $tooltips = document.querySelector('.tooltip-inner');
+	if (!!$tooltips && $tooltips.textContent.indexOf('いいね') !== -1) {
+		$tooltips.textContent = 'お気に入りに登録';
+		$tooltips.parentNode.style['margin-left'] = '-2.5em';
 	}
-
-	setTimeout(restoreFavStar, 100);
-}, 0);
+	setTimeout(replacerTooltip, 100);
+})();
 
 (function replacer(parent) {
 	Array.prototype.slice.call(parent.childNodes).forEach(function(node) {

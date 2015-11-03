@@ -14,6 +14,6 @@
 		} else setTimeout(function(){ replacer(node); }, 100);
 	});
 	if (parent === document.body) {
-		setTimeout(function(){ replacer(document.body); }, 100);
+		setTimeout(function(){ replacer(document.body); }, 1000);
 	}
 })(document.body);
